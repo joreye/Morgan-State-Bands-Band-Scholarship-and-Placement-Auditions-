@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Morgan State University Bands — Scholarships & Auditions</title>
+  <meta name="description" content="Morgan State University Bands — Band Scholarship Auditions: requirements, submission standards, and contact." />
+  <style>
+  /* Basic page reset for standalone hosting */
+  html,body{margin:0;padding:0;background:#060913;color:#f5f7ff;}
+  a{color:inherit}
+  </style>
+
+  <style>
+/* =============================
+   MSU AUDITIONS — BRINE-SAFE “ISLAND”
+   Template: Squarespace 7.0 Brine family (Ahmir / Miller)
+   ============================= */
+
+/* Island wrapper forces the intended “page” look inside Squarespace sections */
+.msu-shell{
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+
+  border-radius: 18px;
+  overflow: hidden;
+
+  background:
+    radial-gradient(1100px 650px at 12% -10%, rgba(29,78,216,.30), transparent 58%),
+    radial-gradient(900px 600px at 92% 0%, rgba(245,158,11,.25), transparent 60%),
+    linear-gradient(180deg, #070b14, #060913) !important;
+
+  color: #f5f7ff !important;
+  font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji" !important;
+
+  padding: 0 !important;
+}
+
+/* Reset Brine bleed inside island */
+.msu-shell, .msu-shell *{
+  box-sizing: border-box !important;
+  font-family: inherit !important;
+  letter-spacing: .15px;
+}
+
+/* Brine often overrides links + headings */
+.msu-shell a{ color:#9ac2ff !important; text-decoration:none !important; }
+.msu-shell a:hover{ text-decoration:underline !important; }
+.msu-shell h1,.msu-shell h2,.msu-shell h3,.msu-shell p,.msu-shell ul,.msu-shell li{ color: inherit !important; }
+
+.msu-auditions{
+  --card: rgba(15, 27, 55, .72);
+  --card2: rgba(9, 14, 28, .55);
+  --muted:#c7cfeb;
+  --line: rgba(93, 125, 196, .28);
+  --ok:#22c55e;
+  --warn:#f59e0b;
+  --danger:#fb7185;
+  --shadow: 0 14px 40px rgba(0,0,0,.45);
+  --radius: 18px;
+  --max: 1160px;
+}
+
+.msu-auditions .wrap{max-width: var(--max); margin:0 auto;}
+.msu-auditions header{
+  padding: 34px 18px 18px;
+  border-bottom: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(11,31,74,.55), rgba(0,0,0,0));
+  position: relative;
+  overflow:hidden;
+}
+.msu-auditions header:before{
+  content:"";
+  position:absolute; inset:-2px;
+  background:
+    radial-gradient(1000px 320px at 15% 0%, rgba(245,158,11,.20), transparent 60%),
+    radial-gradient(800px 360px at 85% 0%, rgba(29,78,216,.18), transparent 55%);
+  pointer-events:none;
+}
+.msu-auditions .brandline{
+  position:relative;
+  display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between;
+  margin-bottom: 14px;
+}
+.msu-auditions .brandLeft{display:flex; align-items:center; gap:12px; min-width: 260px;}
+.msu-auditions .seal{
+  width: 44px; height: 44px; border-radius: 12px;
+  background: linear-gradient(180deg, rgba(245,158,11,.95), rgba(245,158,11,.70));
+  box-shadow: 0 10px 24px rgba(245,158,11,.18);
+  display:grid; place-items:center;
+  color:#111827 !important;
+  font-weight:900 !important;
+  border:1px solid rgba(255,255,255,.20);
+  user-select:none;
+}
+.msu-auditions .seal span{font-size: 14px; letter-spacing:.6px;}
+.msu-auditions .pill{
+  position:relative;
+  display:inline-flex; gap:8px; align-items:center;
+  padding: 8px 12px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background: rgba(9,14,28,.55);
+  color: var(--muted) !important;
+  font-size: 13px;
+  backdrop-filter: blur(6px);
+}
+.msu-auditions .pill b{color: #f5f7ff !important; font-weight: 750 !important;}
+
+.msu-auditions h1{
+  position:relative;
+  margin: 10px 0 10px;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.08;
+  letter-spacing: .2px;
+}
+.msu-auditions .sub{
+  position:relative;
+  max-width: 86ch;
+  color: var(--muted) !important;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 0 14px;
+}
+
+.msu-auditions nav{
+  position:relative;
+  display:flex; flex-wrap:wrap; gap:10px;
+  padding: 12px 0 0;
+}
+.msu-auditions nav a{
+  font-size: 14px;
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(9,14,28,.35);
+  color: #f5f7ff !important;
+  display:inline-block;
+}
+.msu-auditions nav a:hover{border-color: rgba(154,194,255,.65);}
+
+.msu-auditions main{padding: 22px 18px 70px;}
+.msu-auditions .grid{
+  display:grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 16px;
+  align-items:start;
+}
+@media (max-width: 980px){
+  .msu-auditions .grid{grid-template-columns: 1fr;}
+}
+
+.msu-auditions .card{
+  background: var(--card) !important;
+  border: 1px solid var(--line) !important;
+  border-radius: var(--radius) !important;
+  box-shadow: var(--shadow) !important;
+  padding: 18px !important;
+  backdrop-filter: blur(8px);
+}
+.msu-auditions .card h2{margin: 0 0 10px; font-size: 20px; letter-spacing:.2px;}
+.msu-auditions .card h3{margin: 16px 0 8px; font-size: 16px;}
+
+.msu-auditions ul{margin: 8px 0 0 18px; color: var(--muted) !important; line-height:1.6;}
+.msu-auditions li{margin: 6px 0;}
+
+.msu-auditions .kicker{display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-bottom: 12px;}
+.msu-auditions .badge{
+  display:inline-flex; align-items:center; gap:8px;
+  padding: 7px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  border:1px solid var(--line);
+  background: rgba(9,14,28,.45);
+  color: var(--muted) !important;
+}
+.msu-auditions .badge strong{color:#f5f7ff !important;}
+.msu-auditions .badge .dot{width:8px; height:8px; border-radius:50%; background: var(--ok); box-shadow: 0 0 0 3px rgba(34,197,94,.15);}
+.msu-auditions .badge.warn .dot{background: var(--warn); box-shadow: 0 0 0 3px rgba(245,158,11,.15);}
+.msu-auditions .badge.danger .dot{background: var(--danger); box-shadow: 0 0 0 3px rgba(251,113,133,.15);}
+
+.msu-auditions .callouts{display:grid; gap:12px; grid-template-columns:1fr; margin-top:12px;}
+.msu-auditions .callout{
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: var(--card2) !important;
+  padding: 14px;
+}
+.msu-auditions .callout p{margin: 8px 0 0; color: var(--muted) !important; line-height:1.6;}
+
+.msu-auditions .ctaRow{display:flex; flex-wrap:wrap; gap:10px; margin-top: 12px;}
+
+/* Buttons: block Brine button restyles */
+.msu-auditions .btn{
+  all: unset;
+  display:inline-flex;
+  gap:10px; align-items:center; justify-content:center;
+  padding: 11px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: rgba(9,14,28,.50);
+  color: #f5f7ff !important;
+  font-weight: 750 !important;
+  font-size: 14px !important;
+  cursor: pointer;
+}
+.msu-auditions .btn.primary{
+  background: linear-gradient(180deg, rgba(245,158,11,.98), rgba(245,158,11,.78)) !important;
+  color:#111827 !important;
+  border-color: rgba(245,158,11,.85) !important;
+  box-shadow: 0 14px 34px rgba(245,158,11,.14) !important;
+}
+.msu-auditions .btn:hover{
+  border-color: rgba(154,194,255,.70) !important;
+  box-shadow: 0 14px 34px rgba(154,194,255,.10) !important;
+}
+
+.msu-auditions .tiny{font-size: 12.5px; color: var(--muted) !important; margin-top: 10px; line-height:1.55;}
+.msu-auditions .hr{height:1px; background: var(--line); margin: 14px 0;}
+
+.msu-auditions .twoCol{display:grid; grid-template-columns: 1fr 1fr; gap: 14px;}
+@media (max-width: 720px){ .msu-auditions .twoCol{grid-template-columns: 1fr;} }
+
+.msu-auditions details{
+  border: 1px solid var(--line);
+  background: rgba(9,14,28,.45) !important;
+  border-radius: 14px;
+  padding: 12px 14px;
+}
+.msu-auditions details + details{margin-top: 10px;}
+.msu-auditions summary{cursor:pointer; font-weight: 800 !important; color:#f5f7ff !important; list-style: none;}
+.msu-auditions summary::-webkit-details-marker{display:none;}
+.msu-auditions details p, .msu-auditions details ul{margin-top: 10px;}
+
+.msu-auditions footer{
+  border-top: 1px solid var(--line);
+  padding: 18px;
+  color: var(--muted) !important;
+  font-size: 13px;
+}
+.msu-auditions .footgrid{display:grid; gap:10px; grid-template-columns: 1fr 1fr;}
+@media (max-width: 860px){.msu-auditions .footgrid{grid-template-columns:1fr;}}
+.msu-auditions .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;}
+
+.msu-auditions .notice{
+  border: 1px dashed rgba(245,158,11,.55);
+  background: rgba(245,158,11,.08) !important;
+  border-radius: 14px;
+  padding: 12px 14px;
+  color: var(--muted) !important;
+}
+.msu-auditions .notice b{color:#f5f7ff !important;}
+  </style>
+</head>
+
+<body>
+<div class="msu-shell" id="msu-auditions-top">
+  <div class="msu-auditions">
+
+    <header role="banner">
+      <div class="wrap">
+        <div class="brandline" aria-label="Morgan State University Bands page header">
+          <div class="brandLeft">
+            <div class="seal" aria-hidden="true"><span>MSU</span></div>
+            <div class="pill"><b>Morgan State University Bands</b> · Scholarships & Auditions</div>
+          </div>
+          <div class="pill">Applies to: <b>Scholarship</b> · <b>Majors</b> · <b>Non-Majors</b> · <b>Ensemble</b> · <b>Part Placement</b></div>
+        </div>
+
+        <h1>Band Scholarship Auditions</h1>
+        <p class="sub">
+          One audition can serve multiple outcomes: <b>scholarship consideration</b> (highly competitive; awards are limited),
+          <b>music major/non-major placement</b>, <b>ensemble placement</b> (Wind Ensemble / Wind Symphony / Symphonic Band / Athletic Bands),
+          and <b>part placement</b>. Prepare the core requirements below and submit using the official process.
+        </p>
+
+        <div class="ctaRow" style="margin-top:10px;">
+          <a class="btn primary" href="https://drive.google.com/file/d/1_G2MqHSyjvdH9fVbCAX_SFp_BlWk0nmr/view?usp=sharing" target="_blank" rel="noopener">Download Audition Packet (PDF)</a>
+          <a class="btn" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=6aQR9Z6F50-OzNrMfL7xuWIeQpqni-xKpzBXFO5t0b9UN0JKUjVEMUlFOVAxMUFGTVdVMjZDNzJKOC4u" target="_blank" rel="noopener">Submit Audition Videos</a>
+          <a class="btn" href="https://calendly.com/jorim-reid-morgan-state-m3/morgan-state-university-band-scholarship-auditions" target="_blank" rel="noopener">Schedule Live Audition</a>
+          <a class="btn" href="https://drive.google.com/file/d/1te3MugxnVsa8faePNLg3AStPx01S1cAV/view?usp=share_link" target="_blank" rel="noopener">Band FAQ (PDF)</a>
+        </div>
+
+        <nav aria-label="Page sections">
+          <a href="#requirements">Audition Requirements</a>
+          <a href="#cheatcode">Excerpt Hyperlinks</a>
+          <a href="#remote">Recorded Video Standards</a>
+          <a href="#live">Live Audition Audio</a>
+          <a href="#sightreading">Sight-Reading</a>
+          <a href="#jazz">Jazz Addendum</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="wrap grid">
+
+        <!-- LEFT / MAIN -->
+        <section class="card" id="requirements" aria-label="Audition requirements">
+          <div class="kicker">
+            <span class="badge danger"><span class="dot"></span><strong>Scholarships are competitive</strong> — prepare everything</span>
+            <span class="badge warn"><span class="dot"></span><strong>Core Standard</strong>: chromatic + all major & minor scales</span>
+            <span class="badge"><span class="dot"></span><strong>Memorization</strong> preferred, not required</span>
+          </div>
+
+          <h2>Music Requirements for All Auditions</h2>
+
+          <div class="twoCol">
+            <div>
+              <h3>1) Scales — Required (Standard for ALL Auditions)</h3>
+              <ul>
+                <li><b>Chromatic scale:</b> full practical range; steady tempo; even tone.</li>
+                <li><b>Major scales:</b> all <b>12</b>; <b>two octaves when possible</b> (use the most practical range if two octaves are not possible).</li>
+                <li><b>Minor scales:</b> all minor scales in <b>Natural / Harmonic / Melodic</b> forms; <b>two octaves when possible</b>.</li>
+                <li><b>Prepare as marked</b> on the included scale sheets.</li>
+                <li><b>Memorization:</b> preferred (can strengthen scholarship/competitive placement), not required.</li>
+              </ul>
+
+              <div class="callout" style="margin-top:12px;">
+                <b>Scholarship Benchmarks</b>
+                <p>
+                  For strongest scholarship consideration, complete the full scale standard and demonstrate accurate
+                  tone, time, and intonation.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3>2) Performance Material — Excerpts/Selections</h3>
+              <ul>
+                <li><b>Required:</b> at least <b>two contrasting</b> selections <i>or</i> the assigned excerpts for your instrument.</li>
+                <li>Examples of contrast: lyrical vs. technical; slow vs. fast; legato vs. articulated; different styles/eras.</li>
+                <li><b>Top consideration:</b> perform <b>all assigned excerpts</b> and complete the full scale requirements.</li>
+              </ul>
+
+              <div class="callouts">
+                <div class="callout">
+                  <b>Audition Outcomes (One Audition, Multiple Uses)</b>
+                  <p>
+                    Scholarship consideration, major/non-major placement, ensemble placement, and part placement.
+                  </p>
+                </div>
+                <div class="callout">
+                  <b>Evaluation Criteria</b>
+                  <p>
+                    Tone quality, intonation, rhythmic accuracy/time feel, technique & articulation clarity, range & endurance,
+                    musicality, preparation & professionalism.
+                  </p>
+                </div>
+              </div>
+
+              <div class="ctaRow">
+                <a class="btn primary" href="#contact">Start Your Audition Process</a>
+                <a class="btn" href="#remote">Recorded Audition Rules</a>
+                <a class="btn" href="#live">Live Audio Settings</a>
+              </div>
+
+              <p class="tiny">
+                Scholarships are <b>limited</b> and auditions are <b>highly competitive</b>. Consistent preparation across all excerpts and the complete scale standard strengthens outcomes.
+              </p>
+            </div>
+          </div>
+
+          <div class="hr"></div>
+
+          <div class="callout" id="cheatcode">
+            <b>Your Built-In “Cheat Code” (Use It.)</b>
+            <p>
+              Every excerpt page includes a <b>blue hyperlink</b> to a professional performance and interpretation of that exact excerpt.
+              Use it to lock in tempo, style, articulation, tone, and phrasing—and to reduce audition stress.
+              It’s a reference tool, not a substitute for practice.
+            </p>
+          </div>
+        </section>
+
+        <!-- RIGHT / SIDEBAR -->
+        <aside class="card" aria-label="Quick checklist and submission standards">
+          <h2>Quick Checklist</h2>
+          <ul>
+            <li>Scales: chromatic + all major + all minor (Nat/Harm/Melodic), 2 octaves when possible.</li>
+            <li>Excerpts: play the assigned excerpts; add contrasting material if needed.</li>
+            <li>Scholarship goal: play <b>all</b> excerpts + complete the full scale standard.</li>
+            <li>Video: single continuous takes, no edits, no enhancers.</li>
+            <li>Live: disable noise cancellation / use music-friendly audio settings.</li>
+          </ul>
+
+          <div class="hr"></div>
+
+          <h2 id="remote">Recorded Video Submission Standards</h2>
+          <ul>
+            <li><b>Single continuous take</b> per selection/excerpt (no splicing/edits).</li>
+            <li>Camera shows face and instrument; hands clearly visible.</li>
+            <li>Quiet space, minimal echo (avoid fans/HVAC when possible).</li>
+            <li>No reverb, compression, EQ, Dolby, “voice focus,” or enhancement filters.</li>
+            <li>At the start of each video, state: <b>Name</b> · <b>Instrument</b> · <b>Pathway</b> (Scholarship / Major / Non-Major / Ensemble / Part Placement).</li>
+            <li>Do a 10-second test of your loudest passage to confirm it is not distorted or “pumping.”</li>
+          </ul>
+
+          <p class="tiny">
+            Placement tip: device <b>6–10 feet away</b>, slightly off-axis, to avoid harsh tone and distortion.
+          </p>
+
+          <div class="hr"></div>
+
+          <h2 id="live">Live Audition Audio Settings (Zoom / Google Meet)</h2>
+          <p class="tiny" style="margin-top:0;">
+            Goal: prevent the app from treating your instrument as background noise and cutting it out.
+          </p>
+
+          <details open>
+            <summary>Zoom (music-friendly settings)</summary>
+            <ul>
+              <li><b>Desktop:</b> Zoom → Settings → Audio → turn ON <b>Original Sound for Musicians</b> (or “Original Sound”).</li>
+              <li>Set background noise suppression to <b>Low or Off</b>.</li>
+              <li>Turn OFF: <b>Automatically adjust microphone volume</b> (if shown).</li>
+              <li>In the meeting, confirm <b>Original Sound</b> is toggled ON.</li>
+              <li><b>Mobile:</b> enable “Original Sound/Original Audio” if available; otherwise use desktop when possible.</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>Google Meet (best settings)</summary>
+            <ul>
+              <li><b>Desktop (Chrome recommended):</b> Meet → Settings (gear) → Audio → select correct mic.</li>
+              <li>Turn OFF: <b>Noise cancellation</b> (critical for instruments).</li>
+              <li>Set mic level so it does not clip (avoid red/peaking).</li>
+              <li><b>Mobile:</b> if you can’t find noise cancellation settings, use a laptop/desktop.</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>iPhone / iPad mic modes (important)</summary>
+            <ul>
+              <li>Disable “voice enhancement,” “noise reduction,” “Dolby,” or similar processing.</li>
+              <li>During the call: set Mic Mode to <b>Standard</b> (avoid Voice Isolation; Wide Spectrum may help if available).</li>
+              <li>Use Wi-Fi when possible; avoid Bluetooth earbuds for instrumental auditions.</li>
+            </ul>
+          </details>
+        </aside>
+      </div>
+
+      <div class="wrap" style="margin-top:16px;">
+        <section class="card" id="sightreading" aria-label="Sight-reading section">
+          <h2>Sight-Reading / Musicianship (If Used)</h2>
+          <ul>
+            <li>Sight-reading may be required for ensemble placement and/or part placement.</li>
+            <li>If included, students may receive a brief silent study period before performing (commonly <b>30 seconds</b>).</li>
+            <li>Materials may include mixed meters, articulations, style markings, and dynamic contrasts.</li>
+            <li><b>Percussion (priority scholarship consideration):</b> may be asked to sight-read on <b>snare</b> and <b>mallets</b>.</li>
+          </ul>
+        </section>
+
+        <section class="card" id="jazz" style="margin-top:16px;" aria-label="Jazz addendum">
+          <h2>Jazz Audition Addendum (If Auditioning for Jazz Ensemble)</h2>
+          <p class="sub" style="margin-bottom:10px;">
+            If you are auditioning for Jazz Ensemble/Jazz Band placement using the jazz packet, prepare the following:
+          </p>
+          <ul>
+            <li>Assigned jazz etude(s)/excerpts (as provided).</li>
+            <li><b>Improvisation (swing style):</b> Bb Blues (two 12-bar choruses at 128 bpm) and Rhythm Changes (one 32-bar chorus at 180 bpm).</li>
+            <li>Follow packet instructions for tuning tones and count-offs.</li>
+            <li>Sight-reading may be included depending on ensemble needs.</li>
+          </ul>
+          <p class="tiny">
+            Note: If auditioning for both concert band placement and jazz placement, submit required materials for each pathway.
+          </p>
+        </section>
+
+        <section class="card" id="faq" style="margin-top:16px;" aria-label="Frequently asked questions">
+          <h2>FAQ</h2>
+
+          <details open>
+            <summary>Do I have to memorize scales?</summary>
+            <p class="tiny">
+              Memorization is <b>preferred</b> but not required. Memorization and full completion of the scale standard can strengthen scholarship and competitive placement outcomes.
+            </p>
+          </details>
+
+          <details>
+            <summary>How many excerpts should I play?</summary>
+            <p class="tiny">
+              Prepare at least <b>two contrasting</b> selections or the assigned excerpts. For top consideration, perform <b>all assigned excerpts</b> and complete the full scale requirements.
+            </p>
+          </details>
+
+          <details>
+            <summary>Can I submit recorded auditions and also do a live audition?</summary>
+            <p class="tiny">
+              Yes—when offered. Recorded submissions must be continuous takes with no edits. Live auditions should use the music-friendly audio settings on this page.
+            </p>
+          </details>
+
+          <details>
+            <summary>Where do I get the excerpt packet and scale sheets?</summary>
+            <p class="tiny">
+              Use the official packet and scale sheets provided by Morgan State University Bands.
+            </p>
+            <div class="ctaRow">
+              <a class="btn primary" href="https://drive.google.com/file/d/1_G2MqHSyjvdH9fVbCAX_SFp_BlWk0nmr/view?usp=sharing" target="_blank" rel="noopener">Download Audition Packet (PDF)</a>
+              <a class="btn" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=6aQR9Z6F50-OzNrMfL7xuWIeQpqni-xKpzBXFO5t0b9UN0JKUjVEMUlFOVAxMUFGTVdVMjZDNzJKOC4u" target="_blank" rel="noopener">Submit Audition Videos</a>
+            </div>
+            <p class="tiny mono">
+              Admin note: host PDFs at stable URLs (university server / SharePoint / OneDrive / Box) when possible.
+            </p>
+          </details>
+        </section>
+
+        <section class="card" id="contact" style="margin-top:16px;" aria-label="Contact and next steps">
+          <h2>Contact & Next Steps</h2>
+
+          <div class="notice">
+            <b>Next Steps:</b> Choose your pathway, prepare scales + excerpts, submit recorded auditions (or schedule live), and watch for results.
+          </div>
+
+          <ul>
+            <li><b>Step 1:</b> Confirm your pathway (Scholarship / Major / Non-Major / Ensemble Placement / Part Placement).</li>
+            <li><b>Step 2:</b> Download and prepare the packet (scales + excerpts).</li>
+            <li><b>Step 3:</b> Submit recorded videos (or schedule a live audition when available).</li>
+            <li><b>Step 4:</b> Watch for placement and scholarship communication.</li>
+          </ul>
+
+          <div class="callout" style="margin-top:12px;">
+            <b>Official Contact</b>
+            <p class="tiny" style="margin:10px 0 0;">
+              Email: <a href="mailto:jorim.reid@morgan.edu">jorim.reid@morgan.edu</a><br/>
+              Phone: <a href="tel:+14438853123">443-885-3123</a><br/>
+              Live audition scheduling: <a href="https://calendly.com/jorim-reid-morgan-state-m3/morgan-state-university-band-scholarship-auditions" target="_blank" rel="noopener">Calendly link</a><br/>
+              Band FAQ (PDF): <a href="https://drive.google.com/file/d/1te3MugxnVsa8faePNLg3AStPx01S1cAV/view?usp=share_link" target="_blank" rel="noopener">Open PDF</a>
+            </p>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <footer role="contentinfo">
+      <div class="wrap footgrid">
+        <div>
+          <b>Posting Notes</b><br/>
+          Links are wired to: Audition Packet (Drive), Video Upload (Microsoft Forms), Scheduling (Calendly), FAQ (Drive).
+        </div>
+        <div>
+          <b>Requirement Note</b><br/>
+          Upload requires a Morgan State University email login per your Microsoft Forms settings.
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</div>
+</body>
+</html>
